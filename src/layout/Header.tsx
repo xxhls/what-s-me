@@ -17,9 +17,10 @@ import { Space } from '@douyinfe/semi-ui';
 
 const Header = () => {
   return (
-    <Layout.Header>
+    <Layout.Header style={{ borderBottom: '1px solid var(--semi-color-border)' }}>
       <div style={{ width: '1280px', margin: '0 auto' }}>
         <Nav
+          style={{border: 'none'}}
           mode={'horizontal'}
           items={[
             { itemKey: 'home', text: '首页', icon: <IconIntro /> },
