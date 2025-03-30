@@ -6,6 +6,7 @@ const Footer = () => {
       style={{
         display: 'flex',
         justifyContent: 'center',
+        marginTop: '20px',
         padding: '20px',
         color: 'var(--semi-color-text-2)',
         backgroundColor: 'rgba(var(--semi-grey-0), 1)',

@@ -2,27 +2,32 @@ import { Layout, Space, Avatar, Row, Col } from '@douyinfe/semi-ui';
 import { Card } from '@douyinfe/semi-ui';
 import { Divider } from '@douyinfe/semi-ui';
 import { Tag, Descriptions } from '@douyinfe/semi-ui';
+import { Typography } from '@douyinfe/semi-ui';
+import { Timeline } from '@douyinfe/semi-ui';
+import { IconAlertTriangle } from '@douyinfe/semi-icons';
 
 const Content = () => {
+  const { Paragraph, Title } = Typography;
   const data = [
-    { key: '抖音号', value: 'SemiDesign' },
-    { key: '主播类型', value: '自由主播' },
-    { key: '安全等级', value: '3级' },
+    { key: '公司', value: '京东-软件开发' },
+    { key: '居住地', value: '北京市通州区' },
+    { key: '毕业院校', value: '南京邮电大学' },
     {
-      key: '垂类标签',
+      key: '技能',
       value: (
-        <Space>
-          <Tag size="small" shape="circle" color="amber">
-            互联网资讯
+        <Space wrap>
+          <Tag size="small" shape="circle" color="green">
+            Vue
           </Tag>
-          <Tag size="small" shape="circle" color="violet">
-            编程
+          <Tag size="small" shape="circle" color="light-blue">
+            React
+          </Tag>
+          <Tag size="small" shape="circle" color="orange">
+            Rust
           </Tag>
         </Space>
       ),
     },
-    { key: '作品数量', value: '88888888' },
-    { key: '认证状态', value: '这是一个很长', span: 3 },
   ];
   return (
     <Layout.Content>
@@ -36,6 +41,9 @@ const Content = () => {
           <Col span={6}>
             <Card>
               <Space vertical>
+                <div className="w-full">
+                    <Title heading={5}>个人简介</Title>
+                </div>
                 <Descriptions
                   layout="vertical"
                   align="plain"
@@ -43,27 +51,31 @@ const Content = () => {
                   column={4}
                 />
                 <Divider />
-                <Descriptions
-                  layout="vertical"
-                  align="plain"
-                  data={data}
-                  column={4}
-                />
-                <Divider />
-                <Descriptions
-                  layout="vertical"
-                  align="plain"
-                  data={data}
-                  column={4}
-                />
-                <Divider />
-                <Descriptions
-                  layout="vertical"
-                  align="plain"
-                  data={data}
-                  column={4}
-                />
-                <Divider />
+                <div className="w-full">
+                    <Title heading={5}>人生事件</Title>
+                </div>
+                <Timeline>
+                  <Timeline.Item time="2019-07-14 10:35">默认样式的节点</Timeline.Item>
+                    <Timeline.Item time="2019-06-13 16:17" dot={<IconAlertTriangle />} type="warning">
+                        自定义图标
+                    </Timeline.Item>
+                    <Timeline.Item time="2019-05-14 18:34" color="pink">
+                        自定义节点颜色
+                    </Timeline.Item>
+                    <Timeline.Item time="2019-04-10 12:20">
+                        <span style={{ fontSize: '18px' }}>自定义节点样式</span>
+                    </Timeline.Item>
+                  <Timeline.Item time="2019-07-14 10:35">默认样式的节点</Timeline.Item>
+                  <Timeline.Item time="2019-06-13 16:17" dot={<IconAlertTriangle />} type="warning">
+                      自定义图标
+                  </Timeline.Item>
+                  <Timeline.Item time="2019-05-14 18:34" color="pink">
+                      自定义节点颜色
+                  </Timeline.Item>
+                  <Timeline.Item time="2019-04-10 12:20">
+                      <span style={{ fontSize: '18px' }}>自定义节点样式</span>
+                  </Timeline.Item>
+              </Timeline>
               </Space>
             </Card>
           </Col>
