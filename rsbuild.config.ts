@@ -8,13 +8,9 @@ export default defineConfig({
     assetPrefix: '/what-s-me/',
   },
   html: {
-    template: "./public/index.html"
+    template: './public/index.html',
   },
-  plugins: [
-    pluginReact(),
-    pluginSass(),
-    pluginTypedCSSModules()
-  ],
+  plugins: [pluginReact(), pluginSass(), pluginTypedCSSModules()],
   tools: {
     postcss: {
       postcssOptions: {
@@ -22,5 +18,5 @@ export default defineConfig({
         plugins: [require('@tailwindcss/postcss')],
       },
     },
-  }
+  },
 });
