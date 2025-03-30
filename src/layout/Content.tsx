@@ -7,7 +7,7 @@ import { Timeline } from '@douyinfe/semi-ui';
 import { IconAlertTriangle } from '@douyinfe/semi-icons';
 
 const Content = () => {
-  const { Paragraph, Title } = Typography;
+  const { Paragraph, Title, Text } = Typography;
   const data = [
     { key: '公司', value: '京东-软件开发' },
     { key: '居住地', value: '北京市通州区' },
@@ -32,11 +32,18 @@ const Content = () => {
   return (
     <Layout.Content>
       <div style={{ width: '1280px', margin: '20px auto 0' }}>
-        <div style={{ marginBottom: '20px' }}>
-          <Avatar shape="square" size="large">
+        <Space style={{ marginBottom: '20px' }}>
+          <Avatar shape="square" size="large" src="https://avatars.githubusercontent.com/u/108137214?v=4">
             U
           </Avatar>
-        </div>
+          <div style={{height: '72px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+            <Title heading={5}>XXHLS</Title>
+            <Paragraph>
+                <Text>全栈工程师</Text><br />
+                <Text>Talk less, show me your code.</Text>
+            </Paragraph>
+          </div>
+        </Space>
         <Row style={{ width: '100%' }} gutter={16}>
           <Col span={6}>
             <Card>
