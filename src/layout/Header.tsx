@@ -16,6 +16,21 @@ import {
 import { Space } from '@douyinfe/semi-ui';
 
 const Header = () => {
+
+  const switchMode = () => {
+    const body = document.body;
+    if (body.hasAttribute('theme-mode')) {
+        body.removeAttribute('theme-mode');
+    } else {
+        body.setAttribute('theme-mode', 'dark');
+    }
+};
+
+const openLink = (link: string) => {
+  window.location = link as unknown as Location
+}
+
+
   return (
     <Layout.Header style={{ borderBottom: '1px solid var(--semi-color-border)' }}>
       <div style={{ width: '1280px', margin: '0 auto' }}>
@@ -38,7 +53,8 @@ const Header = () => {
               <Button
                 theme="borderless"
                 type="tertiary"
-                icon={<IconMoon size="extra-large" />}
+                icon={<IconMoon size="extra-large" />} 
+                onClick={switchMode}
               />
               <Button
                 theme="borderless"
@@ -49,11 +65,13 @@ const Header = () => {
                 theme="borderless"
                 type="tertiary"
                 icon={<IconTiktokLogo size="extra-large" />}
+                onClick={() => openLink('https://v.douyin.com/0TLJjZQIXSg/%209@3.com')}
               />
               <Button
                 theme="borderless"
                 type="tertiary"
                 icon={<IconGithubLogo size="extra-large" />}
+                onClick={() => openLink('https://www.github.com/xxhls')}
               />
             </Space>
           }
