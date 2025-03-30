@@ -5,7 +5,7 @@ import { pluginTypedCSSModules } from '@rsbuild/plugin-typed-css-modules';
 
 export default defineConfig({
   output: {
-    assetPrefix: '/what-s-me/',
+    assetPrefix: '/xxhls/',
   },
   html: {
     template: './public/index.html',
