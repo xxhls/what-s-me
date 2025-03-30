@@ -4,6 +4,9 @@ import { pluginSass } from '@rsbuild/plugin-sass';
 import { pluginTypedCSSModules } from '@rsbuild/plugin-typed-css-modules';
 
 export default defineConfig({
+  output: {
+    assetPrefix: '/what-s-me/',
+  },
   html: {
     template: "./public/index.html"
   },
