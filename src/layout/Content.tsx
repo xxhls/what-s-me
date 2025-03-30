@@ -1,4 +1,4 @@
-import { Layout, Space, Avatar, Row, Col } from '@douyinfe/semi-ui';
+import { Layout, Space, Avatar, Row, Col, Image } from '@douyinfe/semi-ui';
 import { Card } from '@douyinfe/semi-ui';
 import { Divider } from '@douyinfe/semi-ui';
 import { Tag, Descriptions } from '@douyinfe/semi-ui';
@@ -81,70 +81,58 @@ const Content = () => {
           </Col>
           <Col span={18}>
             <Space vertical>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
+              <Card style={{width: '100%'}}>
+                <Image
+                    src="https://raw.githubusercontent.com/xxhls/what-s-me/refs/heads/master/assets/github-contribution-grid-snake.svg"
+                />
               </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
-              </Card>
-              <Card>
-                Semi Design 是由抖音前端团队与 UED
-                团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的
-                Web 应用。
+              <Card title="博客">
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>宽松行距</Title>
+                <Paragraph spacing="extended">
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>宽松行距</Title>
+                <Paragraph spacing="extended">
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>宽松行距</Title>
+                <Paragraph spacing="extended">
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>默认行距</Title>
+                <Paragraph spacing="extended" >
+                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
+                </Paragraph>
+                <br />
+                <Title heading={5}>......</Title>
               </Card>
             </Space>
           </Col>
