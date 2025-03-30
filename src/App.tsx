@@ -1,11 +1,15 @@
-import './App.css';
+import { Layout } from '@douyinfe/semi-ui';
+import Header from 'layout/Header';
+import Content from 'layout/Content';
+import Footer from 'layout/Footer';
 
 const App = () => {
   return (
-    <div className="content">
-      <h1 className="text-3xl font-bold underline">Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
-    </div>
+    <Layout style={{ border: '1px solid var(--semi-color-border)' }}>
+      <Header />
+      <Content />
+      <Footer />
+    </Layout>
   );
 };
 
