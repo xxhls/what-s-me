@@ -31,21 +31,20 @@ const Content = () => {
   ];
   return (
     <Layout.Content>
-      <div style={{ width: '1280px', margin: '20px auto 0' }}>
-        <Space style={{ marginBottom: '20px' }}>
-          <Avatar shape="square" size="large" src="https://avatars.githubusercontent.com/u/108137214?v=4">
-            U
-          </Avatar>
-          <div style={{height: '72px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
-            <Title heading={5}>XXHLS</Title>
-            <Paragraph>
-                <Text>全栈工程师</Text><br />
-                <Text>Talk less, show me your code.</Text>
-            </Paragraph>
-          </div>
-        </Space>
-        <Row style={{ width: '100%' }} gutter={16}>
+        <Row style={{ width: '1280px', margin: '20px auto 0' }} gutter={16}>
           <Col span={6}>
+            <Space style={{ marginBottom: '20px' }}>
+              <Avatar shape="square" size="large" src="https://avatars.githubusercontent.com/u/108137214?v=4">
+                U
+              </Avatar>
+              <div style={{height: '72px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+                <Title heading={5}>XXHLS</Title>
+                <Paragraph>
+                    <Text>全栈工程师</Text><br />
+                    <Text>Talk less, show the code.</Text>
+                </Paragraph>
+              </div>
+            </Space>
             <Card>
               <Space vertical>
                 <div className="w-full">
@@ -119,32 +118,55 @@ const Content = () => {
                     Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
                 </Paragraph>
                 <br />
-                <Title heading={5}>宽松行距</Title>
-                <Paragraph spacing="extended">
-                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
-                </Paragraph>
-                <br />
-                <Title heading={5}>默认行距</Title>
-                <Paragraph spacing="extended" >
-                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
-                </Paragraph>
-                <br />
-                <Title heading={5}>默认行距</Title>
-                <Paragraph spacing="extended" >
-                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
-                </Paragraph>
-                <br />
-                <Title heading={5}>默认行距</Title>
-                <Paragraph spacing="extended" >
-                    Semi Design 是由抖音前端团队与 UED 团队共同设计开发并维护的设计系统。设计系统包含设计语言以及一整套可复用的前端组件，帮助设计师与开发者更容易地打造高质量的、用户体验一致的、符合设计规范的 Web 应用。
-                </Paragraph>
-                <br />
                 <Title heading={5}>......</Title>
               </Card>
+              <div style={{
+                width: '100%',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 1fr)',
+                gap: '16px',
+                marginBottom: '16px'
+              }}>
+                <Card 
+                  title='项目 1' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+                <Card 
+                  title='项目 2' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+                <Card 
+                  title='项目 3' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+                <Card 
+                  title='项目 1' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+                <Card 
+                  title='项目 2' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+                <Card 
+                  title='项目 1' 
+                  style={{ width: '100%' }}
+                >
+                  项目描述内容
+                </Card>
+              </div>
             </Space>
           </Col>
         </Row>
-      </div>
     </Layout.Content>
   );
 };
